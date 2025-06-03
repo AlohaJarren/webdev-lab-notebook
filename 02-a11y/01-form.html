@@ -3,26 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>01 - Form</title>
-    <link rel="stylesheet" href="../_styles/styles.css" />
+    <title>01 - Accessible Form</title>
+    <style>
+      form > * {
+        margin: 1em 0;
+      }
+
+      fieldset {
+        border: 0;
+        padding: 0;
+        margin-top: 1em;
+      }
+
+      div > label,
+      legend {
+        font-weight: 800;
+      }
+    </style>
   </head>
   <body>
-    <h1>01 - Form</h1>
-    <form action="/submit">
-      <span>Name</span>
-      <input type="text" />
-      <br /><br />
-      <label>
-        Email
-        <input type="text" />
-      </label>
-      <br /><br />
-      <span>Favorite Character</span>
-      <div><input type="radio" id="spongebob" />Spongebob</div>
-      <div><input type="radio" id="patrick" />Patrick</div>
-      <div><input type="radio" id="sandy" />Sandy</div>
-      <br />
-      <button>Submit</button>
-    </form>
+    <main>
+      <h1>Accessible Character Form</h1>
+
+      <form action="/submit">
+        <!-- Name input, properly labeled -->
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <!-- Email input, using type="email" for validation and accessibility -->
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <!-- Character selection grouped semantically -->
+        <fieldset>
+          <legend>Favorite Character</legend>
+
+          <div>
+            <input
+              type="radio"
+              id="spongebob"
+              name="character"
+              value="spongebob"
+              required
+            />
+            <label for="spongebob">Spongebob</label>
+          </div>
+
+          <div>
+            <input type="radio" id="patrick" name="character" value="patrick" />
+            <label for="patrick">Patrick</label>
+          </div>
+
+          <div>
+            <input type="radio" id="sandy" name="character" value="sandy" />
+            <label for="sandy">Sandy</label>
+          </div>
+        </fieldset>
+
+        <!-- Submit button (explicit type added just to be safe) -->
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
