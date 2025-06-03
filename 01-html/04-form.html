@@ -9,7 +9,87 @@
   <body>
     <main>
       <form action="/submit">
-        <!-- Add your code here -->
+        <h1>Form</h1>
+
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@pdx.edu"
+            required
+          />
+        </div>
+
+        <br />
+
+        <!-- Favorite character question with radio buttons -->
+        <fieldset>
+          <legend>Favorite Character:</legend>
+          <div>
+            <input
+              type="radio"
+              id="spongebob"
+              name="character"
+              value="spongebob"
+              required
+            />
+            <label for="spongebob">Spongebob</label>
+          </div>
+          <div>
+            <input type="radio" id="sandy" name="character" value="sandy" />
+            <label for="sandy">Sandy</label>
+          </div>
+          <div>
+            <input type="radio" id="patrick" name="character" value="patrick" />
+            <label for="patrick">Patrick</label>
+          </div>
+        </fieldset>
+
+        <br />
+
+        <!-- Fan status checkboxes (can select multiple) -->
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <div>
+            <input
+              type="checkbox"
+              id="watched-all"
+              name="fandom"
+              value="all-episodes"
+            />
+            <label for="watched-all">Yes, I have watched all episodes!</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="memes"
+              name="fandom"
+              value="best-memes"
+            />
+            <label for="memes">Yes, it's got the best memes.</label>
+          </div>
+        </fieldset>
+
+        <br />
+
+        <!-- Standard submit/reset -->
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
       </form>
     </main>
   </body>

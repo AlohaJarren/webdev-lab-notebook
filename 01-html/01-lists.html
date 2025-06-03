@@ -9,7 +9,35 @@
   <body>
     <main>
       <h1>Grocery List</h1>
-      <!-- Add your code here -->
+      <ol>
+        <li>Eggs</li>
+        <li>
+          Milk
+          <ul>
+            <li>2% Reduced Fat</li>
+            <li>Almond Milk (Unsweetened)</li>
+            <li>Coconut Milk</li>
+          </ul>
+        </li>
+        <li>Cheddar Cheese</li>
+        <li>Whole Wheat Pasta</li>
+        <li>Steel-Cut Oatmeal</li>
+        <li>Fuji Apples</li>
+        <li>
+          <a
+            href="#cleaning-supplies"
+            aria-label="Jump to cleaning supplies section"
+          >
+            Cleaning Supplies
+          </a>
+        </li>
+      </ol>
+
+      <!-- Optional extra section (not really required, added for style/structure clarity) -->
+      <section id="cleaning-supplies" hidden>
+        <!-- Hidden here, but linked — I could expand it in future -->
+        <p>This section could list cleaning supplies in more detail.</p>
+      </section>
     </main>
   </body>
 </html>
