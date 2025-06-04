@@ -7,20 +7,50 @@
 .box {
   padding: 10px;
   color: var(--white);
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: left;
 }
 
+/* Give the main section some breathing room under the absolute banner */
+.main {
+  margin-top: 80px;
+}
+
+/* Top-left purple box, no positioning overrides */
 .static {
+  position: static;
+  width: 300px;
+  height: 400px;
   background-color: var(--darkviolet);
 }
 
+/* Stacked purple box to the right (offset via relative positioning) */
 .relative {
+  position: relative;
+  top: -400px; /* stack vertically aligned */
+  left: 310px; /* horizontal offset + 10px gap */
+  width: 300px;
+  height: 400px;
   background-color: var(--purple);
 }
 
+/* Red bar anchored to top using absolute positioning */
 .absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
   background-color: var(--maroon);
 }
 
+/* Fixed bar at the bottom of the viewport */
 .fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
   background-color: var(--darkgolden);
 }

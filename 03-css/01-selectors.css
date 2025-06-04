@@ -1,21 +1,47 @@
-/* CSS custom properties / CSS variables */
-
+/* CSS custom properties (aka theme colors I might reuse later) */
 :root {
-  --darkmagenta: #8b008b;
-  --magenta: #ff00ff;
-  --royalblue: #4169e1;
   --teal: #008080;
+  --magenta: #8b008b;
+  --royalblue: #4169e1;
   --violet: #9400d3;
+  --green: #008000;
 }
 
-/* Use attribute selectors for the first part of the exercise */
+/* --- ATTRIBUTE SELECTORS --- */
 
-li[class] {
-  color: var(--red);
+/* any li with class 'dog' in it (including multi-class entries) */
+li[class~="dog"] {
+  color: var(--magenta);
 }
 
-/* Use descendant, child, and sibling selectors for the second part */
+/* any id that starts with 'c' (e.g. #cat) */
+li[id^="c"] {
+  color: var(--teal);
+}
 
+/* any class name that contains 'do' anywhere in it */
+li[class*="do"] {
+  color: var(--royalblue);
+}
+
+/* any class that ends in 'g' (hedgehog) */
+li[class$="g"] {
+  color: var(--violet);
+}
+
+/* --- PARENT AND SIBLING SELECTORS --- */
+
+/* default color for all list items inside a <section> */
 section li {
   color: var(--green);
+}
+
+/* change everything after the .first item (eggs) */
+.list-food .first ~ li {
+  color: var(--magenta);
+}
+
+/* change the item directly after .second (flour) */
+.list-food .second + li {
+  color: var(--royalblue);
 }

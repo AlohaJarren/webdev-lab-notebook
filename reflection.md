@@ -36,6 +36,20 @@ I would’ve liked more coverage on how screen readers actually parse forms. May
 
 A bonus challenge to "break and fix" accessibility (e.g. be given a broken page with several hidden issues) would’ve helped reinforce the skill. Also, including a test case with custom input styling or visually hidden labels would’ve helped deepen my practical understanding.
 
-### CSS
+### Reflection – 03-CSS Section
 
-Enter your reflections on this section here.
+#### Were you able to complete the exercises on your own or did you use the videos or the solutions for help?
+
+Yes, I completed all of the exercises on my own through experimentation, reviewing lecture slides, and using DevTools to validate positioning and styles. I made sure each one reflected my own interpretation of the screenshots, especially in the later exercises where layout nuance and responsive behavior came into play.
+
+#### How helpful did you find the exercises in this section? Was there one exercise that was particularly helpful?
+
+This section was incredibly helpful for solidifying my understanding of selectors, the box model, positioning, and media queries. The `06-media-queries` exercise was especially useful — it brought everything together by requiring me to implement responsive layouts, test breakpoints across screen sizes, and write mobile-first styles. That one made the biggest difference for me in terms of practical front-end dev fluency.
+
+#### Was there something that you wish had been explained better?
+
+I think a brief breakdown of how pseudo-elements differ from pseudo-classes in terms of browser rendering would’ve helped in the `02-pseudo` exercise. Also, some clarification around stacking contexts and how z-index interacts with `position: relative` and `absolute` might’ve made the layout portions more intuitive when debugging overlaps.
+
+#### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+Maybe an additional Flexbox or Grid-based version of the `04-layout` exercise would’ve been helpful as a modern complement to the float-based method. That could show how newer layout systems simplify what floats and margin hacks used to handle — and help reinforce why modern CSS is shifting that way.

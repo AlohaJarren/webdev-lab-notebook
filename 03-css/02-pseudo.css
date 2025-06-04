@@ -2,3 +2,19 @@
   width: 600px;
   margin: 40px auto;
 }
+
+/* Emphasize the first letter of each paragraph */
+.paragraph::first-letter {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1;
+  display: inline-block;
+  margin-right: 4px; /* give a little breathing room */
+  color: #333;
+}
+
+/* Add a light hover effect to paragraphs for interactivity */
+.paragraph:hover {
+  background-color: #d0f0f2; /* soft Tiffany-inspired blue */
+  transition: background-color 0.3s ease-in-out;
+}
