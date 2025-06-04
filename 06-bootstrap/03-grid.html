@@ -5,14 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 03 - Bootstrap Grid</title>
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Shared & local styling -->
     <link rel="stylesheet" href="../_styles/styles.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <h1>03 - Bootstrap Grid</h1>
-    <!-- Add your code here -->
+    <main class="container mt-4">
+      <!-- Heading for screen readers & layout context -->
+      <header class="text-center mb-4">
+        <h1>Bootstrap Grid</h1>
+      </header>
+
+      <!-- 📱 Row 1: 100% width on small, split evenly at md breakpoint -->
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-6">One</div>
+        <div class="col-sm-12 col-md-6">Two</div>
+      </div>
+
+      <!-- 🖥️ Row 2: Fixed 8/4 split across all sizes -->
+      <div class="row text-center">
+        <div class="col-8">Three</div>
+        <div class="col-4">Four</div>
+      </div>
+
+      <!-- 💻 Row 3: Responsive combo using sm, md, lg breakpoints -->
+      <div class="row text-center">
+        <!-- Five starts stacked, then expands as screen grows -->
+        <div class="col-sm-6 col-md-4 col-lg-8">Five</div>
+
+        <!-- Six is the flexible middle child of this grid -->
+        <div class="col-sm-6 col-md-4 col-lg-2">Six</div>
+
+        <!-- Seven starts full-width, ends narrowest -->
+        <div class="col-sm-12 col-md-4 col-lg-2">Seven</div>
+      </div>
+    </main>
   </body>
 </html>

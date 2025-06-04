@@ -5,14 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 01 - Cards</title>
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Provided styling files -->
     <link rel="stylesheet" href="../_styles/styles.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>01 - Cards</h1>
-    <!-- Add your code here -->
+    <main class="container my-4">
+      <!-- Top-level document heading -->
+      <header class="text-center mb-4">
+        <h1>01 - Cards</h1>
+      </header>
+
+      <!-- Cards side by side, responsive -->
+      <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <!-- Card 1 -->
+        <div class="card" style="width: 22rem">
+          <div class="card-header fw-bold">Featured</div>
+          <div
+            class="box bg-secondary"
+            role="img"
+            aria-label="Visual placeholder image"
+          ></div>
+          <div class="card-body">
+            <!-- Changed from h5 to h2 to maintain heading level hierarchy -->
+            <h2 class="card-title fw-bold">Special title treatment</h2>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non modi
+              voluptate dicta dolores consectetur, quisquam quam placeat rem
+              aspernatur ratione eveniet quo delectus architecto nisi veniam
+              rerum in sint odit?
+            </p>
+            <a href="#" class="btn btn-primary">Read more about this card</a>
+          </div>
+          <div class="card-footer text-muted">Last updated 3 mins ago</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" style="width: 22rem">
+          <div class="card-header fw-bold">Featured</div>
+          <div
+            class="box bg-secondary"
+            role="img"
+            aria-label="Visual placeholder image"
+          ></div>
+          <div class="card-body">
+            <h2 class="card-title fw-bold">Special title treatment</h2>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non modi
+              voluptate dicta dolores consectetur, quisquam quam placeat rem
+              aspernatur ratione eveniet quo delectus architecto nisi veniam
+              rerum in sint odit?
+            </p>
+            <a href="#" class="btn btn-primary">Read more about this card</a>
+          </div>
+          <div class="card-footer text-muted">Last updated 3 mins ago</div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

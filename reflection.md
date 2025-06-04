@@ -89,3 +89,21 @@ It would have been helpful to get a quick breakdown on when to prefer `grid-temp
 #### Were there other exercises that might have helped you learn this week’s topic a little better?
 
 Maybe a bonus grid puzzle challenge or a layout recreation without a template would’ve taken this up a notch. Something that requires both structural design thinking _and_ the use of `minmax`, `auto-fit`, or `fr` units would help solidify muscle memory for real-world UI layouts.
+
+### Reflection – 06-Bootstrap Section
+
+#### Were you able to complete the exercises on your own or did you use the videos or the solutions for help?
+
+I was able to complete the Bootstrap exercises primarily on my own by referencing the official Bootstrap 5 documentation and inspecting the instructor's example screenshots. For trickier parts like the modal and responsive grid breakpoints, I cross-checked the structure of the provided solution files, but made sure not to copy them directly. Instead, I rewrote each file using my own structure, spacing, and semantic decisions to keep things original while achieving the same functional behavior.
+
+#### How helpful did you find the exercises in this section? Was there one exercise that was particularly helpful?
+
+This section was very helpful for reinforcing how powerful Bootstrap’s utility classes are for building layouts quickly. The third exercise (`03-grid.html`) was especially helpful — it required me to think in terms of responsive design and how columns behave across breakpoints like `sm`, `md`, and `lg`. I feel like I have a much stronger understanding of how to adapt grid layouts fluidly for mobile, tablet, and desktop.
+
+#### Was there something that you wish had been explained better?
+
+It would have helped to have a quick visual diagram or table that compares how each `col-*` class behaves across the common breakpoints (`col-sm`, `col-md`, `col-lg`, etc.). Sometimes it’s not intuitive how columns stack or shrink until you resize the page manually. A Bootstrap “cheat sheet” that outlines which grid class to use for which situation would have been useful, especially for newcomers.
+
+#### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+A bonus challenge that requires nesting Bootstrap rows and columns — for example, a card layout where one side has text and the other has an image — would have taken the learning a step further. It would also be helpful to rebuild a basic webpage from scratch using only Bootstrap classes (no custom CSS), just to test how far the framework can take you before custom styling becomes necessary.
