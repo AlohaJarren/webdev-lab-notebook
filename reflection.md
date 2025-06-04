@@ -107,3 +107,21 @@ I would have appreciated a quick breakdown of modal accessibility best practices
 #### Were there other exercises that might have helped you learn this week’s topic a little better?
 
 A mini challenge where we recreate a basic landing page using just Bootstrap classes (no custom CSS) could really drive home the practical applications. Also, working with nested grids inside cards or modals would have been useful to practice more advanced layout patterns.
+
+### Reflection: 07-JavaScript Section
+
+#### Were you able to complete the exercises on your own or did you use the videos or the solutions for help?
+
+I was able to complete the exercises on my own by working through small test cases and using the console to validate logic. The key to solving these challenges was breaking each function down by intent — whether it's mapping values into a new structure, filtering based on conditions, or reducing into a final result.
+
+#### How helpful did you find the exercises in this section? Was there one exercise that was particularly helpful?
+
+The exercises were very helpful in deepening my understanding of `map`, `filter`, and `reduce`. The `reduceHouses` function was especially useful, as it challenged me to think about how to accumulate results dynamically while maintaining clean code. It also highlighted just how elegant JavaScript's reduce method can be when used effectively.
+
+#### Was there something that you wish had been explained better?
+
+I think a short visual breakdown or walkthrough of how `reduce` works under the hood — especially when returning an object — would’ve clarified things faster. While the docs are helpful, seeing how the accumulator evolves per iteration would’ve solidified the concept earlier.
+
+#### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+Adding an additional challenge that combines all three methods (`filter().map().reduce()`) into one chain would have been an excellent way to reinforce the composability of these array methods. Ideally, this would connect to something tangible like rendering filtered characters to the DOM or producing summary stats.

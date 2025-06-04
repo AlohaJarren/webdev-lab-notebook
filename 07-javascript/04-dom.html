@@ -10,19 +10,38 @@
   <body>
     <main>
       <h1>04 - DOM</h1>
-      <section>
-        <h2>Click Event</h2>
-        <label for="userInput1">Input</label>
-        <input id="userInput1" type="text" />
-        <input type="button" value="Copy Text" id="copy" />
-        <p>Output</p>
-        <div class="output"></div>
+
+      <!-- Click Event Section -->
+      <section aria-labelledby="clickEventHeader">
+        <h2 id="clickEventHeader">Click Event</h2>
+        <label for="userInput1">Enter something fun</label>
+        <input id="userInput1" type="text" placeholder="Type here..." />
+
+        <input id="copy" type="button" value="Copy Text" />
+
+        <!-- Corrected label using <p> and aria-labelledby -->
+        <p id="output1-label"><strong>Copied Output:</strong></p>
+        <div
+          id="output1"
+          class="output"
+          aria-labelledby="output1-label"
+          aria-live="polite"
+        ></div>
       </section>
-      <section id="inputEventExample">
-        <h2>Input Event</h2>
-        <label for="userInput2">Input</label>
-        <input id="userInput2" type="text" />
-        <p>Output</p>
+
+      <!-- Input Event Section -->
+      <section aria-labelledby="inputEventHeader">
+        <h2 id="inputEventHeader">Input Event</h2>
+        <label for="userInput2">Start typing something</label>
+        <input id="userInput2" type="text" placeholder="Type to auto-copy..." />
+
+        <p id="output2-label"><strong>Live Output:</strong></p>
+        <div
+          id="output2"
+          class="output"
+          aria-labelledby="output2-label"
+          aria-live="polite"
+        ></div>
       </section>
     </main>
   </body>

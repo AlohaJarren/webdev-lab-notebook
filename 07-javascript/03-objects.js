@@ -1,34 +1,42 @@
+// Global object to hold all key-value pairs
 let result = {};
 
+// insertItem: Adds a new property to the result object
 const insertItem = (key, value) => {
-  // insertItem the property with key and value into result
-  return key;
+  result[key] = value; // easy insert syntax
 };
 
+// deleteItem: Removes a key if it exists
 const deleteItem = (key) => {
-  // remove the property with key from result
-  return key;
+  delete result[key]; // silently fails if key doesn't exist, which is fine here
 };
 
+// lookupItem: Returns the value if found, or fallback string
 const lookupItem = (key) => {
-  // return the value from result that is associated with key
-  return key;
+  // Check if the key exists before trying to access
+  return result.hasOwnProperty(key) ? result[key] : "Item does not exist";
 };
 
+// printItems: Returns a comma-separated string of the keys in the object
 const printItems = () => {
-  // return a string of the concatenated key in result, separated by commas
+  return Object.keys(result).join(", ");
 };
 
-insertItem('hello', 'world');
-insertItem('lorem', 'ipsum');
-insertItem('sit', 'amet');
+// TEST CASES
+insertItem("hello", "world");
+insertItem("lorem", "ipsum");
+insertItem("sit", "amet");
+
 console.log(printItems());
-// expected: 'hello, lorem, sit' (order may be different)
-console.log(lookupItem('lorem'));
+// expected: 'hello, lorem, sit' (order may be different; JS objects aren't ordered like arrays)
+
+console.log(lookupItem("lorem"));
 // expected: 'ipsum'
 
-deleteItem('lorem');
+deleteItem("lorem");
+
 console.log(printItems());
 // expected: 'hello, sit' (order may be different)
-console.log(lookupItem('lorem'));
+
+console.log(lookupItem("lorem"));
 // expected: 'Item does not exist'

@@ -1,44 +1,59 @@
+// Game of Thrones meets JavaScript destructuring. Let's flex those ES6 muscles.
 const destructureItems = (input) => {
-  // destructure the name and parents of the character and format the output as shown
+  // Destructuring the character's first and last name
+  const {
+    first,
+    last,
+    allegiance: {
+      parents: { mother, father },
+    },
+  } = input;
 
-  return input;
+  // Returning formatted string as per instructions with indentation and line breaks
+  return `${first} ${last}\n  daughter of\n  ${mother} and ${father}`;
 };
 
+// Classic Winterfell setup
 const sansa = {
-  first: 'Sansa',
-  last: 'Stark',
+  first: "Sansa",
+  last: "Stark",
   allegiance: {
-    house: 'Winterfell',
+    house: "Winterfell",
     parents: {
-      mother: 'Catelyn Tully',
-      father: 'Eddard Stark',
+      mother: "Catelyn Tully",
+      father: "Eddard Stark",
     },
     animals: {
-      direwolf: 'Lady',
+      direwolf: "Lady",
     },
   },
 };
 
+// Fire & Blood royalty
 const daenerys = {
-  first: 'Daenerys',
-  last: 'Targaryen',
+  first: "Daenerys",
+  last: "Targaryen",
   allegiance: {
-    house: 'Targaryen',
+    house: "Targaryen",
     parents: {
-      mother: 'Queen Rhaella',
-      father: 'King Aerys II Targaryen',
+      mother: "Queen Rhaella",
+      father: "King Aerys II Targaryen",
     },
     animals: {
-      dragons: 'Drogon',
+      dragons: "Drogon",
     },
   },
 };
 
+// Tests (no spoilers here)
 console.log(destructureItems(sansa));
+// Expected:
 // Sansa Stark
 //   daughter of
 //   Catelyn Tully and Eddard Stark
+
 console.log(destructureItems(daenerys));
+// Expected:
 // Daenerys Targaryen
 //   daughter of
 //   Queen Rhaella and King Aerys II Targaryen
