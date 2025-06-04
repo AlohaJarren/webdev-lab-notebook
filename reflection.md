@@ -94,16 +94,16 @@ Maybe a bonus grid puzzle challenge or a layout recreation without a template wo
 
 #### Were you able to complete the exercises on your own or did you use the videos or the solutions for help?
 
-I was able to complete the Bootstrap exercises primarily on my own by referencing the official Bootstrap 5 documentation and inspecting the instructor's example screenshots. For trickier parts like the modal and responsive grid breakpoints, I cross-checked the structure of the provided solution files, but made sure not to copy them directly. Instead, I rewrote each file using my own structure, spacing, and semantic decisions to keep things original while achieving the same functional behavior.
+Yes, I completed the Bootstrap exercises on my own using the official Bootstrap documentation and DevTools to inspect layout behavior at different screen widths. I paid close attention to the example screenshots and relied on my understanding of utility classes, layout structure, and modal functionality to implement each exercise accurately.
 
 #### How helpful did you find the exercises in this section? Was there one exercise that was particularly helpful?
 
-This section was very helpful for reinforcing how powerful Bootstrap’s utility classes are for building layouts quickly. The third exercise (`03-grid.html`) was especially helpful — it required me to think in terms of responsive design and how columns behave across breakpoints like `sm`, `md`, and `lg`. I feel like I have a much stronger understanding of how to adapt grid layouts fluidly for mobile, tablet, and desktop.
+The exercises were very helpful for solidifying my comfort with Bootstrap’s grid system, responsive breakpoints, and UI components. Exercise 03 stood out the most — recreating a layout that adapts from stacked to horizontal based on screen width helped me better internalize how `col-sm`, `col-md`, and `col-lg` interact across devices. It gave me a strong mental model for real-world responsiveness.
 
 #### Was there something that you wish had been explained better?
 
-It would have helped to have a quick visual diagram or table that compares how each `col-*` class behaves across the common breakpoints (`col-sm`, `col-md`, `col-lg`, etc.). Sometimes it’s not intuitive how columns stack or shrink until you resize the page manually. A Bootstrap “cheat sheet” that outlines which grid class to use for which situation would have been useful, especially for newcomers.
+I would have appreciated a quick breakdown of modal accessibility best practices — especially things like `aria-labelledby`, `aria-hidden`, and focus management when a modal opens or closes. Even though Bootstrap handles most of it for you, knowing the “why” behind those attributes would reinforce semantic awareness.
 
 #### Were there other exercises that might have helped you learn this week’s topic a little better?
 
-A bonus challenge that requires nesting Bootstrap rows and columns — for example, a card layout where one side has text and the other has an image — would have taken the learning a step further. It would also be helpful to rebuild a basic webpage from scratch using only Bootstrap classes (no custom CSS), just to test how far the framework can take you before custom styling becomes necessary.
+A mini challenge where we recreate a basic landing page using just Bootstrap classes (no custom CSS) could really drive home the practical applications. Also, working with nested grids inside cards or modals would have been useful to practice more advanced layout patterns.
