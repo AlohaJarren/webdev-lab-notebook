@@ -2,22 +2,66 @@
   background-color: rgb(190, 190, 231);
 }
 
-/* Flex Container 1 */
+/* ===== Flex Container 1 ===== */
+/* Goal: Center-aligned items, wrap when necessary */
+.flex-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-/* Flex Container 2 */
+/* ===== Flex Container 2 ===== */
+/* Goal: Reverse order horizontally, wrap as needed */
+.flex-container-2 {
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
 
-/* Flex Container 3 */
+/* ===== Flex Container 3 ===== */
+/* Goal: Column-reverse direction with vertical stacking */
+.flex-container-3 {
+  height: 400px;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-items: flex-end;
+}
 
-/* use height: 400px; on the container */
+/* ===== Flex Container 4 ===== */
+/* Goal: Wrap-reverse rows, evenly spaced columns */
+.flex-container-4 {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-evenly;
+}
 
-/* Flex Container 4 */
+/* ===== Flex Container 5 ===== */
+/* Goal: Variable height boxes aligned by center baseline */
+.flex-container-5 {
+  display: flex;
+  align-items: center;
+}
 
-/* Flex Container 5 */
+/* Staggered height elements for visual rhythm */
+.flex-container-5 .item1,
+.flex-container-5 .item3,
+.flex-container-5 .item6 {
+  height: 150px;
+}
 
-/* Flex Container 6 */
+.flex-container-5 .item2,
+.flex-container-5 .item8 {
+  height: 250px;
+}
+
+/* ===== Flex Container 6 ===== */
+/* Goal: 2-column vertical wrap with consistent item width */
+.flex-container-6 {
+  height: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  overflow-y: auto; /* lets you scroll if height is exceeded */
+}
 
 .flex-container-6 .flex-item {
   width: 400px;
 }
-
-/* use height: 300px; on the container */

@@ -53,3 +53,21 @@ I think a brief breakdown of how pseudo-elements differ from pseudo-classes in t
 #### Were there other exercises that might have helped you learn this week’s topic a little better?
 
 Maybe an additional Flexbox or Grid-based version of the `04-layout` exercise would’ve been helpful as a modern complement to the float-based method. That could show how newer layout systems simplify what floats and margin hacks used to handle — and help reinforce why modern CSS is shifting that way.
+
+### Reflection – 04-Flexbox Section
+
+#### Were you able to complete the exercises on your own or did you use the videos or the solutions for help?
+
+I was able to complete the Flexbox exercises independently by drawing on what I learned from class, browser DevTools inspection, and the official MDN Flexbox documentation. It took some trial and error to fine-tune the `flex-direction`, `wrap`, and `justify-content` values, but it felt like a good hands-on challenge.
+
+#### How helpful did you find the exercises in this section? Was there one exercise that was particularly helpful?
+
+The exercises were very helpful in making me visualize how `flex-flow`, `wrap-reverse`, and `align-items` behave when used in combination. Flex Container 3 in particular stood out—it required using `column-reverse wrap` along with `align-items: flex-end`, which really helped me see how axis behavior changes depending on direction. That’s something that sticks better through doing than just reading.
+
+#### Was there something that you wish had been explained better?
+
+I think a short summary on when to prefer Flexbox over Grid—especially for two-dimensional layouts—would have been helpful at this point in the course. Additionally, a breakdown of which Flexbox properties influence the _main axis_ vs the _cross axis_ could reinforce better mental models.
+
+#### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+A small interactive debugging challenge—something like “Fix this broken Flexbox layout”—would’ve been great to practice reading and modifying existing layouts instead of just building from scratch. It could help develop a stronger eye for layout flaws and misused properties.
