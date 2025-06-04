@@ -1,3 +1,4 @@
+/* Assign each semantic element to a named grid area */
 .header {
   grid-area: header;
 }
@@ -6,19 +7,85 @@
   grid-area: article;
 }
 
+.aside {
+  grid-area: aside;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Default mobile-first grid layout — stacked vertically */
 .grid-container {
   display: grid;
   height: 97vh;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(
+    8,
+    1fr
+  ); /* intentional repetition for vertical structure */
   gap: 10px;
   grid-template-areas:
-    'header'
-    'article'
-    'article'
-    'section'
-    'section'
-    'section'
-    'aside'
-    'footer';
+    "header"
+    "article"
+    "article"
+    "section"
+    "section"
+    "section"
+    "aside"
+    "footer";
+}
+
+/* Tablet layout (min-width: 576px) — article takes 2/3, aside takes 1/3 */
+@media (min-width: 576px) {
+  .grid-container {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr 3fr 1fr;
+    grid-template-areas:
+      "header   header"
+      "article  aside"
+      "section  section"
+      "footer   footer";
+  }
+}
+
+/* Medium screens (min-width: 768px) — more breathing room, aside tucked right */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-areas:
+      "header   header    header"
+      "article  article   aside"
+      "section  section   section"
+      "footer   footer    footer";
+  }
+}
+
+/* Desktop and up (min-width: 992px) — full layout with spacious left aside */
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-areas:
+      "header   header    header    header"
+      "aside    article   article   article"
+      "section  section   section   section"
+      "footer   footer    footer    footer";
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+  padding: 0;
 }

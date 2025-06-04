@@ -71,3 +71,21 @@ I think a short summary on when to prefer Flexbox over Grid—especially for two
 #### Were there other exercises that might have helped you learn this week’s topic a little better?
 
 A small interactive debugging challenge—something like “Fix this broken Flexbox layout”—would’ve been great to practice reading and modifying existing layouts instead of just building from scratch. It could help develop a stronger eye for layout flaws and misused properties.
+
+### Reflection: 05-CSS-Grid Section
+
+#### Were you able to complete the exercises on your own or did you use the videos or the solutions for help?
+
+I was able to complete all the exercises on my own by carefully observing the layout patterns and iteratively tweaking my grid properties. I did reference the screenshot examples frequently to match spacing and structure pixel-for-pixel, but didn’t rely on the videos or solution files for this section.
+
+#### How helpful did you find the exercises in this section? Was there one exercise that was particularly helpful?
+
+This section was super helpful for reinforcing how `grid-template-columns`, `grid-template-rows`, and `grid-area` all work together. The fourth layout in `01-grid.css`, where item 6 spans across the entire row, really solidified my understanding of combining row/column spans with named areas. It was like a mini Tetris challenge—and honestly pretty fun.
+
+#### Was there something that you wish had been explained better?
+
+It would have been helpful to get a quick breakdown on when to prefer `grid-template-areas` versus explicit column/row spans, especially in responsive designs. I got it eventually, but it took some trial and error to see how named areas elegantly scale across breakpoints compared to hard-coded spans.
+
+#### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+Maybe a bonus grid puzzle challenge or a layout recreation without a template would’ve taken this up a notch. Something that requires both structural design thinking _and_ the use of `minmax`, `auto-fit`, or `fr` units would help solidify muscle memory for real-world UI layouts.

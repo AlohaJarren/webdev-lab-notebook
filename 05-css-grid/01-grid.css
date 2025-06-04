@@ -1,17 +1,66 @@
+/* Base Grid Container Styling */
+/* All grid layouts share this foundational styling for background and spacing */
 .grid-container {
   background-color: rgb(190, 190, 231);
+  gap: 10px;
 }
 
-/* Grid Container 1 */
+/* === Grid Container 1 === */
+/* 3-column layout with varied column widths: 1:2:3 ratio */
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+}
 
-/* Grid Container 2 */
+/* === Grid Container 2 === */
+/* 4 equal-width columns across 2 rows, with row height ratio of 1:4 */
+.grid-container-2 {
+  display: grid;
+  height: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 4fr;
+}
 
-/* use height: 400px; on the container */
+/* === Grid Container 3 === */
+/* 3-column, 3-row grid with dynamic spans for item 8 */
+.grid-container-3 {
+  display: grid;
+  height: 400px;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 3fr 2fr;
+}
 
-/* Grid Container 3 */
+/* Let item 8 stretch across the last two columns */
+.grid-container-3 .item8 {
+  grid-column: span 2;
+}
 
-/* use height: 400px; on the container */
+/* === Grid Container 4 === */
+/* Two-column layout with four evenly split rows */
+.grid-container-4 {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+}
 
-/* Grid Container 4 */
+/* Make item 1 span two rows vertically */
+.grid-container-4 .item1 {
+  grid-row: span 2;
+}
 
-/* use height: 600px; on the container */
+/* Make item 6 span both columns horizontally */
+.grid-container-4 .item6 {
+  grid-column: span 2;
+}
+
+/* === Visual Consistency for Grid Items === */
+/* Ensure all grid items are centered and visually uniform */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  background-color: purple;
+  color: white;
+}
